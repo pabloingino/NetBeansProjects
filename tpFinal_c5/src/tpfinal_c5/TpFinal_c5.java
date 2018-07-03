@@ -20,25 +20,26 @@ public class TpFinal_c5 {
         // TODO code application logic here
         //SE DECLARAN LOS SCANNER PARA VALIDAR LA SALIDA Y PARA LA CAPTURA DEL CARACTER
         Scanner salida = new Scanner(System.in);
-        Scanner car1 = new Scanner(System.in);
-        Scanner car2 = new Scanner(System.in);
+        Scanner num1 = new Scanner(System.in);
+        Scanner num2 = new Scanner(System.in);
         String exit;
-        char var1, var2;
-        System.out.println("Este programa lee un caracter por teclado y evalua si es una letra mayuscula");
+        float var1, var2;
+        System.out.println("Este programa lee dos numeros ingresados por teclado, \ndivide el primero por el segundo e imprime el resultado");
+        
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
-        System.out.print("Ingrese el primer caracter a evaluar: ");
-        var1 = car1.next().charAt(0);
-        System.out.print("Ingrese el segundo caracter a evaluar: ");
-        var2 = car2.next().charAt(0);
-        //VALIDACION SI VAR1 Y VAR2 SON DOS LETRAS MINUSCULAS
-        if(Character.isLowerCase(var1) && Character.isLowerCase(var2)){
-            //SI ENTRA ACA INFORMA QUE LOS DOS CARACTERES SON LETRAS MINUSCULAS
-            System.out.println("Ambos caracteres, " + var1 +" y "+ var2 + ", son letras minusculas");
-        }else{
-            //SI ENTRA ACA INFORMA QUE NO SON LETRAS MINUSCULAS
-            System.out.println("Los dos caracteres no son letras minusculas");
+        System.out.print("Ingrese el primer numero: ");
+        var1 = num1.nextFloat();
+        System.out.print("Ingrese el segundo numero (Recuerde que no debe ser cero (0)): ");
+        var2 = num2.nextFloat();
+        //VALIDACION SI NUM2 ES CERO SE LE PIDE AL USUARIO QUE REINGRESE EL NUMERO
+        while(var2 == 0){
+            System.out.print("Ingrese el segundo numero (Recuerde que no debe ser cero (0)): ");
+            var2 = num2.nextInt();
         }
+        
+        System.out.println("El resultado de la division es: "+ var1/var2);
+       
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
         System.out.println("Desea salir de la aplicacion? (Debe ingresar si o no)");
         exit = salida.nextLine();
