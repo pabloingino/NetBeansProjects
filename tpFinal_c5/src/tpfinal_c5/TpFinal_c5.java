@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpfinal_c3;
+package tpfinal_c5;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author pablo
  */
-public class TpFinal_c3 {
+public class TpFinal_c5 {
 
     /**
      * @param args the command line arguments
@@ -24,7 +24,7 @@ public class TpFinal_c3 {
         Scanner car2 = new Scanner(System.in);
         String exit;
         char var1, var2;
-        System.out.println("Este programa lee dos caracteres por teclado y evalua si son dos letras minusculas");
+        System.out.println("Este programa lee un caracter por teclado y evalua si es una letra mayuscula");
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
         System.out.print("Ingrese el primer caracter a evaluar: ");
