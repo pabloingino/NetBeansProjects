@@ -30,57 +30,7 @@ public class TpFinal_c7 {
         
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
-            do{
-            System.out.print("Ingrese el numero de mes a evaluar, recuerde que debe ingresar un numero del 1 al 12: ");
-            mes = lmes.nextLine();
-            }while(false == isNumeric(mes));
-            mes.replaceAll(" ", "");
-            int numMes = Integer.parseInt(mes);
-            //while(numMes < 1 || numMes > 12){
-              //  System.out.print("El numero es incorrecto, Debe ingresar un numero entre 1 y 12 ");
-               // mes = lmes.nextInt();
-            //}
-            switch(numMes) {
-                case 1:
-                    System.out.println("El mes ingresado es Enero y tiene  "+ mes31);
-                    break;
-                case 2:
-                    System.out.println("El mes ingresado es Febrero y tiene  "+ mes28);
-                    break;
-                case 3:
-                    System.out.println("El mes ingresado es Marzo y tiene  "+ mes31);
-                    break;
-                case 4:
-                    System.out.println("El mes ingresado es Abril y tiene  "+ mes30);
-                    break;
-                case 5:
-                    System.out.println("El mes ingresado es Mayo y tiene  "+ mes31);
-                    break;
-                case 6:
-                    System.out.println("El mes ingresado es Junio y tiene  "+ mes30);
-                    break;
-                case 7:
-                    System.out.println("El mes ingresado es Julio y tiene  "+ mes31);
-                    break;
-                case 8:
-                    System.out.println("El mes ingresado es Agosto y tiene  "+ mes31);
-                    break;
-                case 9:
-                    System.out.println("El mes ingresado es Septiembre y tiene  "+ mes30);
-                    break;
-                case 10:
-                    System.out.println("El mes ingresado es Octubre y tiene  "+ mes31);
-                    break;
-                case 11:
-                    System.out.println("El mes ingresado es Noviembre y tiene  "+ mes30);
-                    break;
-                case 12:
-                    System.out.println("El mes ingresado es Diciembre y tiene  "+ mes31);
-                    break;
-
-            }
-        
-           
+            
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
         System.out.println("Desea salir de la aplicacion? (Debe ingresar si o no)");
         exit = salida.nextLine();
