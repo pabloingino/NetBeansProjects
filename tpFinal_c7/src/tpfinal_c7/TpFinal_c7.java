@@ -32,7 +32,7 @@ public class TpFinal_c7 {
         do {
         System.out.print("Ingrese el numero de mes a evaluar, recuerde que debe ingresar un numero del 1 al 12: ");
         mes = lmes.nextInt();
-        while(mes < 0 || mes > 12){
+        while(mes < 1 || mes > 12){
             System.out.print("El numero es incorrecto, Debe ingresar un numero entre 1 y 12 ");
             mes = lmes.nextInt();
         }
