@@ -31,7 +31,7 @@ public class TpFinal_d3 {
             for(int i=0;i<10;i++){
                 x =x+2;
                 arreglo[i] = x;
-                System.out.println(arreglo[i]);
+                //System.out.println(arreglo[i]);
             }
                   
            
