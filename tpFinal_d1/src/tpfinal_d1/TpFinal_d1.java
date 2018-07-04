@@ -20,31 +20,65 @@ public class TpFinal_d1 {
         //TODO code application logic here
         //SE DECLARAN LOS SCANNER PARA VALIDAR LA SALIDA Y PARA LA CAPTURA DEL CARACTER
         Scanner salida = new Scanner(System.in);
-        Scanner num = new Scanner(System.in);
+        Scanner lmes = new Scanner(System.in);
         String exit;
-        int[] arreglo = new int[10];
-        int x=0;
-        int sum=0;
-        System.out.println("Este programa lee 10 numeros ingresados por teclados,\nlos guarda en un array de 10 elementos,\nmuestra los datos en las posiciones pares y las suma.");
+        String mes28 = "28 Dias o 29 si el año es bisiesto";
+        String mes30 = "30 Dias";
+        String mes31 = "31 Dias";
+        String mes;
+        System.out.println("Este programa lee un numero ingresados por teclado, \ndetermina e imprime que mes es y si tiene 30, 31 o 28 dias");
         
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
-            sum=0;
-            for(int i=0;i<=9;i++){
-                x = i+1;
-                System.out.print("Por favor infrese el "+ x +" numero: ");
-                arreglo[i] = num.nextInt();
-                System.out.println();
+            do{
+            System.out.print("Ingrese el numero de mes a evaluar, recuerde que debe ingresar un numero del 1 al 12: ");
+            mes = lmes.nextLine();
+            }while(false == isNumeric(mes));
+            mes.replaceAll(" ", "");
+            int numMes = Integer.parseInt(mes);
+            //while(numMes < 1 || numMes > 12){
+              //  System.out.print("El numero es incorrecto, Debe ingresar un numero entre 1 y 12 ");
+               // mes = lmes.nextInt();
+            //}
+            switch(numMes) {
+                case 1:
+                    System.out.println("El mes ingresado es Enero y tiene  "+ mes31);
+                    break;
+                case 2:
+                    System.out.println("El mes ingresado es Febrero y tiene  "+ mes28);
+                    break;
+                case 3:
+                    System.out.println("El mes ingresado es Marzo y tiene  "+ mes31);
+                    break;
+                case 4:
+                    System.out.println("El mes ingresado es Abril y tiene  "+ mes30);
+                    break;
+                case 5:
+                    System.out.println("El mes ingresado es Mayo y tiene  "+ mes31);
+                    break;
+                case 6:
+                    System.out.println("El mes ingresado es Junio y tiene  "+ mes30);
+                    break;
+                case 7:
+                    System.out.println("El mes ingresado es Julio y tiene  "+ mes31);
+                    break;
+                case 8:
+                    System.out.println("El mes ingresado es Agosto y tiene  "+ mes31);
+                    break;
+                case 9:
+                    System.out.println("El mes ingresado es Septiembre y tiene  "+ mes30);
+                    break;
+                case 10:
+                    System.out.println("El mes ingresado es Octubre y tiene  "+ mes31);
+                    break;
+                case 11:
+                    System.out.println("El mes ingresado es Noviembre y tiene  "+ mes30);
+                    break;
+                case 12:
+                    System.out.println("El mes ingresado es Diciembre y tiene  "+ mes31);
+                    break;
+
             }
-            for(int i=0;i<10;i=i+2){
-                //System.out.print("Por favor infrese el "+ i +" numero: ");
-                //arreglo[i] = num.nextInt();
-                
-                System.out.println("Este numero esta guardado en la posicion "+i+" del array arrglo: "+arreglo[i]);
-                sum=sum+arreglo[i];
-               
-            }
-             System.out.println("La suma de los numeros guardados en las posiciones pares es "+sum);
         
            
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
@@ -53,4 +87,8 @@ public class TpFinal_d1 {
         } while(!"si".equalsIgnoreCase(exit));
     }
 
+    private static boolean isNumeric(String mes) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
