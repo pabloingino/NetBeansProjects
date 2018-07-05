@@ -9,7 +9,7 @@ import java.util.*;
 
 /**
  *
- * @author pablo
+ * @authors Bonetti - Campagñon - Ingino
  */
 public class TpFinal_b6 {
 
