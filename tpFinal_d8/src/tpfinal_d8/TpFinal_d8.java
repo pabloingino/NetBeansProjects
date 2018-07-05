@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpfinal_d5;
+package tpfinal_d8;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author pablo
  */
-public class TpFinal_d5 {
+public class TpFinal_d8 {
 
     /**
      * @param args the command line arguments
@@ -20,21 +20,29 @@ public class TpFinal_d5 {
         //TODO code application logic here
         //SE DECLARAN LOS SCANNER PARA VALIDAR LA SALIDA Y PARA LA CAPTURA DEL CARACTER
         Scanner salida = new Scanner(System.in);
-        Scanner arreglo = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String exit;
-        System.out.println("Este programa guarda  10 numeros ingresados por teclado en un array de 10 elementos e imprime su valor negativo");
-        int[] arr = new int[10];
+        int lista[]=new int[5];
+
+        System.out.println("Este programa permite a el usuario debe ingresar valores para llenar un array con números aleatorios. ");
+        
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
-            for(int i = 0;i <= 9; i++){
-                System.out.print("Por favor ingrese el valor numerico de la posicion "+i+ " del array arr: ");
-                arr[i] = arreglo.nextInt();
-                System.out.println();
+            System.out.println("Ingrese números para el listado");
+         
+            for (int i=1;i<lista.length;i++)
+            {
+                System.out.println("Número: "+i);
+                lista[i] = sc.nextInt();                        
             }
-            for(int i = 0;i <= 9; i++){
-                System.out.print("Valor Positivo: " + arr[i]);
-                System.out.println(" Valor Negativo: " + arr[i]*-1);
+        
+            for (int i=1; i<lista.length; i++){
+         
+                 System.out.println("Los numeros aleatorios ingresados fueron:");
+                 System.out.println(lista[i]);
+         
             }
+                  
            
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
         System.out.println("Desea salir de la aplicacion? (Debe ingresar si o no)");

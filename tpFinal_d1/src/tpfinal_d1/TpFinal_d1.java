@@ -24,7 +24,7 @@ public class TpFinal_d1 {
         String exit;
         
         int[] arr = new int[10];
-        System.out.println("Este programa lee un numero ingresados por teclado, \ndetermina e imprime que mes es y si tiene 30, 31 o 28 dias");
+        System.out.println("Este programa lee 10 numeros ingresados por teclado, \nlos guarda en un array y luego imprime cada posicion que valor tiene");
         
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {

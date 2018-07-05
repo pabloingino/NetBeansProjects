@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpfinal_d5;
+package tpfinal_b6;
 
 import java.util.*;
 
@@ -11,35 +11,32 @@ import java.util.*;
  *
  * @author pablo
  */
-public class TpFinal_d5 {
+public class TpFinal_b6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //TODO code application logic here
+        // TODO code application logic here
         //SE DECLARAN LOS SCANNER PARA VALIDAR LA SALIDA Y PARA LA CAPTURA DEL CARACTER
         Scanner salida = new Scanner(System.in);
-        Scanner arreglo = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         String exit;
-        System.out.println("Este programa guarda  10 numeros ingresados por teclado en un array de 10 elementos e imprime su valor negativo");
-        int[] arr = new int[10];
+        double la, lb, a;
+        System.out.println("Programa que calcula y muestra el área de un triángulo a partir de la longitud de sus lados");
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
-            for(int i = 0;i <= 9; i++){
-                System.out.print("Por favor ingrese el valor numerico de la posicion "+i+ " del array arr: ");
-                arr[i] = arreglo.nextInt();
-                System.out.println();
-            }
-            for(int i = 0;i <= 9; i++){
-                System.out.print("Valor Positivo: " + arr[i]);
-                System.out.println(" Valor Negativo: " + arr[i]*-1);
-            }
-           
+            System.out.println("Ingrese la longitud de un lado "); 
+            la = teclado.nextDouble();
+            System.out.println("Ingrese la longitud del otro lado "); 
+            lb = teclado.nextDouble();
+            a = la * lb / 2;
+            System.out.println("El area del triangulo es "+a);
+            
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
         System.out.println("Desea salir de la aplicacion? (Debe ingresar si o no)");
         exit = salida.nextLine();
         } while(!"si".equalsIgnoreCase(exit));
     }
-
+    
 }
