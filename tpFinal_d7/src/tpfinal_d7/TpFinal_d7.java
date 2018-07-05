@@ -22,13 +22,27 @@ public class TpFinal_d7 {
         Scanner salida = new Scanner(System.in);
         Scanner num = new Scanner(System.in);
         String exit;
-        int[] arreglo = new int[10];
-        int x=0;
+        Scanner nom = new Scanner(System.in);
+        Scanner sue = new Scanner(System.in);
+        String[] nombre = new String[20];
+        float[] sueldo = new float[20];
+
         System.out.println("Este programa guarda los 10 primeros numeros pares en un array de 10 elementos");
         
         //INICIO DEL CICLO QUE VALIDA SI EL USUARIO QUIERE SALIR DEL PROGRAMA
         do {
+            for(int i = 0; i < 20; i++){
+                System.out.print("Ingrese el nombre del empleado: ");
+                nombre[i]=nom.nextLine();
+                System.out.print("Ingrese el sueldo del empleado: ");
+                sueldo[i]=sue.nextFloat();
+                System.out.println("-----------------------------------------");
+            }
             
+            for(int i = 0; i < 20; i++){
+                System.out.println("Nombre: "+nombre[i]+ "         | " + " Sueldo: " +sueldo[i] +" | ");
+                System.out.println("-----------------------------------------");
+            }   
                   
            
         //PREGUNTA AL USUARIO SI QUIERE SALIR DEL PROGRAMA
