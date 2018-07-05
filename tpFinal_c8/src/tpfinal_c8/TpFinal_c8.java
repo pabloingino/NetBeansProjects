@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @authors Bonetti - Campagñon - Ingino
+ * @authors Bonetti - Campagnon - Ingino
  */
 public class TpFinal_c8 {
 
